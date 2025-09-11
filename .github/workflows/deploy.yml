@@ -17,7 +17,7 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: 18
-      - run: cd kindred-vows-guide-main && npm ci
+      - run: cd kindred-vows-guide-main && npm install
       - run: cd kindred-vows-guide-main && npm run build
       - uses: actions/upload-pages-artifact@v2
         with:
