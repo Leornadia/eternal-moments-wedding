@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Button } from '@/components/ui/button';
+import { getImagePath } from '@/lib/image-utils';
 
 const Gallery = () => {
   const [activeFilter, setActiveFilter] = useState('All');
@@ -75,7 +76,7 @@ const Gallery = () => {
                   </span>
                 </div>
                 <img 
-                  src={`/images/${photo.image}`}
+                  src={getImagePath(`images/${photo.image}`)}
                   alt={photo.alt}
                   className="w-full h-full object-cover"
                 />
@@ -108,7 +109,7 @@ const Gallery = () => {
               <div key={index} className="group cursor-pointer">
                 <div className="aspect-[4/3] rounded-lg overflow-hidden shadow-card hover-lift mb-4">
                   <img 
-                    src={`/images/Cultural Celebration ${index}.jpg`}
+                    src={getImagePath(`images/Cultural Celebration ${index}.jpg`)}
                     alt={`Cultural Celebration ${index}`}
                     className="w-full h-full object-cover"
                   />

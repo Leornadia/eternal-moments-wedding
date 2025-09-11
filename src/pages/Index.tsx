@@ -6,6 +6,7 @@ import { Badge } from '@/components/ui/badge';
 import { Heart, Users, Award, Calendar, ArrowRight, Star, ChevronLeft, ChevronRight, Camera, Palette, Music, Instagram } from 'lucide-react';
 import heroImage from '@/assets/hero-wedding.jpg';
 import couplesCollage from '@/assets/couples-collage.jpg';
+import { getImagePath } from '@/lib/image-utils';
 
 const Index = () => {
   const [currentTestimonial, setCurrentTestimonial] = useState(0);
@@ -20,19 +21,19 @@ const Index = () => {
     {
       title: "Full Wedding Planning",
       description: "Complete end-to-end planning from engagement to your special day with unlimited support and cultural expertise.",
-      image: "/images/wedding planner 1.jpg",
+      image: getImagePath("images/wedding planner 1.jpg"),
       link: "/services"
     },
     {
       title: "Cultural Ceremonies", 
       description: "Honoring traditions from around the world with authentic ceremonies that celebrate your heritage beautifully.",
-      image: "/images/Cultural Ceremonies.jpg",
+      image: getImagePath("images/Cultural Ceremonies.jpg"),
       link: "/services"
     },
     {
       title: "Venue Transformation",
       description: "Transforming any space into your dream wedding venue with elegant design and cultural authenticity.",
-      image: "/images/Venue Transformation.jpg",
+      image: getImagePath("images/Venue Transformation.jpg"),
       link: "/portfolio"
     }
   ];
@@ -235,7 +236,7 @@ const Index = () => {
             <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 md:p-12 text-center">
               <div className="w-36 h-36 mx-auto mb-6 rounded-full overflow-hidden border-3 border-yellow-400 shadow-lg">
                 <img 
-                  src="/images/What Our Couples Say.jpg" 
+                  src={getImagePath("images/What Our Couples Say.jpg")} 
                   alt={`${currentTestimonialData.name} - Wedding Photo`}
                   className="w-full h-full object-cover"
                 />
@@ -309,7 +310,7 @@ const Index = () => {
                 className="aspect-square rounded-lg overflow-hidden shadow-card hover-lift group cursor-pointer relative"
               >
                 <img 
-                  src={`/images/follow our journey ${index + 1}.jpg`}
+                  src={getImagePath(`images/follow our journey ${index + 1}.jpg`)}
                   alt={photo.alt}
                   className="w-full h-full object-cover"
                 />
