@@ -3,6 +3,7 @@ import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
 import { CheckCircle, Heart, Calendar, Users, Sparkles, Crown } from 'lucide-react';
+import { getImagePath } from '@/lib/image-utils';
 
 
 const Services = () => {
@@ -109,9 +110,9 @@ const Services = () => {
                     <div className="relative h-48 overflow-hidden rounded-t-lg">
                       <img 
                         src={
-                          index === 0 ? "/images/wedding planner.jpg" :
-                          index === 1 ? "/images/Partial Planning Service.jpg" :
-                          "/images/Day-Of Coordination.jpg"
+                          index === 0 ? getImagePath("images/wedding planner.jpg") :
+                          index === 1 ? getImagePath("images/Partial Planning Service.jpg") :
+                          getImagePath("images/Day-Of Coordination.jpg")
                         }
                         alt={`${service.title} service`} 
                         className="w-full h-full object-cover"

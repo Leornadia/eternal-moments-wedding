@@ -2,6 +2,7 @@ import React from 'react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { ArrowRight, Calendar, Users, MapPin, Palette } from 'lucide-react';
+import { getImagePath } from '@/lib/image-utils';
 
 const Portfolio = () => {
   const designStyles = [
@@ -101,7 +102,7 @@ const Portfolio = () => {
                     </span>
                   </div>
                   <img 
-                    src={`/images/Elegant Ballroom Transformation ${index}.jpg`}
+                    src={getImagePath(`images/Elegant Ballroom Transformation ${index}.jpg`)}
                     alt={`Elegant Ballroom Transformation ${index}`}
                     className="w-full h-full object-cover"
                   />
@@ -175,7 +176,7 @@ const Portfolio = () => {
                 <div className={index % 2 === 1 ? 'lg:order-2' : ''}>
                   <div className="aspect-[4/3] rounded-lg shadow-card overflow-hidden">
                     <img 
-                      src={`/images/${project.image}`}
+                      src={getImagePath(`images/${project.image}`)}
                       alt={project.title}
                       className="w-full h-full object-cover"
                     />

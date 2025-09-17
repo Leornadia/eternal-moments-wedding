@@ -12,5 +12,7 @@ export const getImagePath = (imagePath: string): string => {
   
   // In production, use the base path from vite config
   const base = import.meta.env.BASE_URL || '/';
-  return `${base}${cleanPath}`;
+  // Ensure base ends with slash and cleanPath doesn't start with slash
+  const normalizedBase = base.endsWith('/') ? base : `${base}/`;
+  return `${normalizedBase}${cleanPath}`;
 };

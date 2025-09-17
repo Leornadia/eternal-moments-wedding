@@ -4,6 +4,7 @@ import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Badge } from '@/components/ui/badge';
 import { Calendar, User, ArrowRight, Search, TrendingUp } from 'lucide-react';
+import { getImagePath } from '@/lib/image-utils';
 
 const Blog = () => {
   const categories = [
@@ -21,7 +22,7 @@ const Blog = () => {
     date: "March 15, 2024",
     category: "Cultural Traditions",
     readTime: "8 min read",
-    image: "/images/Creating a Multi-Cultural Wedding.jpg"
+    image: getImagePath("images/Creating a Multi-Cultural Wedding.jpg")
   };
 
   const blogPosts = [
@@ -32,7 +33,7 @@ const Blog = () => {
       date: "March 12, 2024",
       category: "Planning Tips",
       readTime: "5 min read",
-      image: "/images/10 Essential Questions to Ask Your Wedding Photographer.jpg"
+      image: getImagePath("images/10 Essential Questions to Ask Your Wedding Photographer.jpg")
     },
     {
       title: "Real Wedding: Aisha & David's Elegant Fusion Celebration",
@@ -41,7 +42,7 @@ const Blog = () => {
       date: "March 10, 2024", 
       category: "Real Weddings",
       readTime: "6 min read",
-      image: "/images/Real Wedding Aisha & David's Elegant Fusion Celebration.jpg"
+      image: getImagePath("images/Real Wedding Aisha & David's Elegant Fusion Celebration.jpg")
     },
     {
       title: "2024 Wedding Color Trends: From Sage Green to Warm Terracotta",
@@ -50,7 +51,7 @@ const Blog = () => {
       date: "March 8, 2024",
       category: "Trends & Inspiration", 
       readTime: "4 min read",
-      image: "/images/2024 Wedding Color Trends From Sage Green to Warm Terracotta.jpg"
+      image: getImagePath("images/2024 Wedding Color Trends From Sage Green to Warm Terracotta.jpg")
     },
     {
       title: "Understanding Indian Wedding Ceremonies: A Complete Guide",
@@ -59,7 +60,7 @@ const Blog = () => {
       date: "March 5, 2024",
       category: "Cultural Traditions",
       readTime: "10 min read",
-      image: "/images/Understanding Indian Wedding Ceremonies A Complete Guide.jpg"
+      image: getImagePath("images/Understanding Indian Wedding Ceremonies A Complete Guide.jpg")
     },
     {
       title: "Vendor Spotlight: Enchanted Blooms Florist",
@@ -68,7 +69,7 @@ const Blog = () => {
       date: "March 3, 2024",
       category: "Vendor Spotlights",
       readTime: "7 min read",
-      image: "/images/Vendor Spotlight Enchanted Blooms Florist.jpg"
+      image: getImagePath("images/Vendor Spotlight Enchanted Blooms Florist.jpg")
     },
     {
       title: "Budget-Friendly Wedding Planning: 15 Ways to Save Without Sacrificing Style",
