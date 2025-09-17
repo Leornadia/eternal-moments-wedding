@@ -105,7 +105,7 @@ const Services = () => {
             {services.map((service, index) => {
               const IconComponent = service.icon;
               return (
-                <Card key={index} className="shadow-card hover-lift bg-gradient-card">
+                <Card key={index} className="shadow-card hover-lift bg-gradient-card flex flex-col h-full">
                   {(index === 0 || index === 1 || index === 2) && (
                     <div className="relative h-48 overflow-hidden rounded-t-lg">
                       <img 
@@ -129,8 +129,8 @@ const Services = () => {
                     <p className="text-3xl font-bold text-primary">{service.price}</p>
                     <p className="text-muted-foreground">{service.description}</p>
                   </CardHeader>
-                  <CardContent>
-                    <ul className="space-y-3 mb-6">
+                  <CardContent className="flex flex-col flex-grow">
+                    <ul className="space-y-3 mb-6 flex-grow">
                       {service.features.map((feature, idx) => (
                         <li key={idx} className="flex items-center space-x-3">
                           <CheckCircle className="h-5 w-5 text-primary flex-shrink-0" />
@@ -138,7 +138,7 @@ const Services = () => {
                         </li>
                       ))}
                     </ul>
-                    <Button className="btn-wedding-primary w-full">
+                    <Button className="btn-wedding-primary w-full mt-auto">
                       Book Consultation
                     </Button>
                   </CardContent>
