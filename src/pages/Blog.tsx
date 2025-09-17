@@ -170,7 +170,7 @@ const Blog = () => {
               {blogPosts.map((post, index) => (
                 <Card key={index} className="shadow-card hover-lift bg-gradient-card cursor-pointer group">
                   <div className="aspect-[3/2] overflow-hidden">
-                    {post.image.startsWith('/images/') ? (
+                    {post.image.includes('images/') ? (
                       <img 
                         src={post.image}
                         alt={post.title}

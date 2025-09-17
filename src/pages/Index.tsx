@@ -192,7 +192,7 @@ const Index = () => {
               <Card key={index} className="shadow-card hover-lift bg-gradient-card group cursor-pointer">
                 <CardContent className="p-8 text-center">
                   <div className="mb-6 group-hover:scale-110 transition-bounce">
-                    {service.image.startsWith('/images/') ? (
+                    {service.image.includes('images/') ? (
                       <img 
                         src={service.image} 
                         alt={`${service.title} service`} 
