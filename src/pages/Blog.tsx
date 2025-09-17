@@ -78,7 +78,7 @@ const Blog = () => {
       date: "March 1, 2024",
       category: "Planning Tips", 
       readTime: "9 min read",
-      image: "/images/Budget-Friendly Wedding Planning 15 Ways to Save Without Sacrificing Style.jpg"
+      image: getImagePath("images/Budget-Friendly Wedding Planning 15 Ways to Save Without Sacrificing Style.jpg")
     }
   ];
 
