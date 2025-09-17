@@ -43,19 +43,7 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
         <nav className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-24">
             {/* Logo */}
-            <div className="flex items-center space-x-5">
-              <a 
-                href="https://clientfirstdigital.com" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="transition-opacity hover:opacity-80"
-              >
-                <img 
-                  src="https://raw.githubusercontent.com/Almeida2019/images/refs/heads/main/Client-First%20Digital/Client%20First%20light%20theme%20logo.webp" 
-                  alt="Client First Digital" 
-                  className="w-16 h-auto md:w-18"
-                />
-              </a>
+            <div className="flex items-center">
               <Link to="/" className="flex flex-col">
                 <span className="font-playfair text-3xl md:text-4xl font-bold leading-none" style={{color: '#2C2C2C', letterSpacing: '0.5px'}}>
                   Eternal Moments
