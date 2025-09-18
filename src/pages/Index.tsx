@@ -346,7 +346,7 @@ const Index = () => {
               </Button>
             </Link>
             <Link to="/services">
-              <Button size="lg" variant="outline" className="text-lg px-8 py-4" style={{borderColor: '#C9A96E', color: '#C9A96E', backgroundColor: 'rgba(201, 169, 110, 0.1)'}}>
+              <Button size="lg" variant="outline" className="text-lg px-8 py-4" style={{borderColor: '#000000', color: '#000000', backgroundColor: 'rgba(255, 255, 255, 0.9)'}}>
                 View Our Services
               </Button>
             </Link>
