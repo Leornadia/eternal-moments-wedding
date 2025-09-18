@@ -10,7 +10,7 @@ const Services = () => {
   const services = [
     {
       title: "Full Planning Service",
-      price: "Starting at $5,000",
+      price: "Starting at R95,000",
       description: "Complete wedding planning from engagement to your special day",
       icon: Crown,
       features: [
@@ -25,7 +25,7 @@ const Services = () => {
     },
     {
       title: "Partial Planning Service", 
-      price: "Starting at $2,500",
+      price: "Starting at R47,500",
       description: "Perfect for couples who want professional guidance for specific aspects",
       icon: Heart,
       features: [
@@ -39,7 +39,7 @@ const Services = () => {
     },
     {
       title: "Day-Of Coordination",
-      price: "Starting at $1,200", 
+      price: "Starting at R22,800", 
       description: "Stress-free wedding day management and execution",
       icon: Calendar,
       features: [
