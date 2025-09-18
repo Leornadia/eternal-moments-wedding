@@ -294,7 +294,7 @@ const Vendors = () => {
             <Button size="lg" variant="secondary" className="btn-wedding-secondary">
               Request Vendor Recommendation
             </Button>
-            <Button size="lg" variant="outline" className="border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary">
+            <Button size="lg" variant="outline" className="text-lg px-8 py-4" style={{borderColor: '#000000', color: '#000000', backgroundColor: 'rgba(255, 255, 255, 0.9)'}}>
               Become a Vendor
             </Button>
           </div>
