@@ -110,7 +110,7 @@ const Index = () => {
               Start Planning
             </Button>
             <Link to="/gallery">
-              <Button size="lg" variant="outline" className="btn-wedding-outline text-white border-white hover:bg-white hover:text-foreground text-lg px-8 py-4">
+              <Button size="lg" variant="outline" className="btn-wedding-outline border-white hover:bg-white text-lg px-8 py-4" style={{color: '#C9A96E', borderColor: '#C9A96E'}}>
                 View Gallery
               </Button>
             </Link>
@@ -346,7 +346,7 @@ const Index = () => {
               </Button>
             </Link>
             <Link to="/services">
-              <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-primary text-lg px-8 py-4">
+              <Button size="lg" variant="outline" className="text-lg px-8 py-4" style={{borderColor: '#C9A96E', color: '#C9A96E', backgroundColor: 'rgba(201, 169, 110, 0.1)'}}>
                 View Our Services
               </Button>
             </Link>
